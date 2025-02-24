@@ -6,25 +6,38 @@
 }
 
 body {
-  background-color: #fff0e9;
+  background-color: #1A1A1A;
+  color: #FFFFFF;
 }
 
 .logo{
+    display: flex;
+    align-items: center;
     font-family: "Charm", Arial, Helvetica, sans-serif;
-    font-size: 35px;
+    font-size: 45px;
+    flex-grow: 5;
+    padding-left: 50px;
 }
 
 .nav-bar {
   display: flex;
-  justify-content: space-around;
+  height: 80px;
 }
 
 .nav-bar-item{
     display: flex;
+    flex-grow: 1;
 }
 
 .nav-bar-buttons{
-    width: 100px;
+    width: 100%;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color:#1A1A1A;
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+    border-left: solid 1px grey;
 }
 
 .main-container {
