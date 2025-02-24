@@ -31,13 +31,14 @@ body {
 
 .nav-bar-buttons{
     width: 100%;
+    font-family: "Charm", Arial, Helvetica, sans-serif;
     font-size: 20px;
     color: #FFFFFF;
     background-color:#1A1A1A;
     border-bottom: none;
     border-top: none;
     border-right: none;
-    border-left: solid 1px grey;
+    border-left: solid 1px rgb(61, 59, 59);
 }
 
 .main-container {
@@ -80,7 +81,7 @@ body {
   z-index: 2; /*Places the text above the overlay*/
   color: white; /*Ensures the text is visible*/
   text-align: center; /*ADJUST ACCORDINGLY DEPENDING ON WHERE YOU WANT TO PLACE YOUR TEXT*/
-  font-size: 24px;
+  font-size: 50px;
   padding: 20px;
 }
 
