@@ -10,13 +10,13 @@ body {
   color: #FFFFFF;
 }
 
-.logo{
-    display: flex;
-    align-items: center;
-    font-family: "Charm", Arial, Helvetica, sans-serif;
-    font-size: 45px;
-    flex-grow: 5;
-    padding-left: 50px;
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: "Charm", Arial, Helvetica, sans-serif;
+  font-size: 45px;
+  flex-grow: 5;
+  padding-left: 150px;
 }
 
 .nav-bar {
@@ -24,21 +24,26 @@ body {
   height: 80px;
 }
 
-.nav-bar-item{
-    display: flex;
-    flex-grow: 1;
+.nav-bar-item {
+  display: flex;
+  flex-grow: 1;
 }
 
-.nav-bar-buttons{
-    width: 100%;
-    font-family: "Charm", Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    color: #FFFFFF;
-    background-color:#1A1A1A;
-    border-bottom: none;
-    border-top: none;
-    border-right: none;
-    border-left: solid 1px rgb(61, 59, 59);
+.nav-bar-buttons {
+  width: 100%;
+  font-family: "Charm", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #FFFFFF;
+  background-color: #1A1A1A;
+  border-bottom: none;
+  border-top: none;
+  border-right: none;
+  border-left: solid 1px rgb(61, 59, 59);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out ;
+}
+
+.nav-bar-buttons:hover{
+  background-color: #383838;
 }
 
 .main-container {
@@ -51,10 +56,12 @@ body {
 
 .main-container.carousel {
   width: 100%;
-  height: 600px; /*Adjust height as needed*/
+  height: 600px;
+  /*Adjust height as needed*/
   background-size: cover;
   background-position: center;
-  position: relative; /*Necessary to make the dark overlay*/
+  position: relative;
+  /*Necessary to make the dark overlay*/
   animation: changeBackground 20s infinite linear;
   transition: background-image 2s ease-in-out;
 }
@@ -66,21 +73,24 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.3
-  ); /* Dark overlay (adjust opacity as needed) */
-  z-index: 1; /*Ensures it appears ABOVE the background*/
+  background-color: rgba(0,
+      0,
+      0,
+      0.3);
+  /* Dark overlay (adjust opacity as needed) */
+  z-index: 1;
+  /*Ensures it appears ABOVE the background*/
 }
 
 .carousel-content {
   font-family: "Charm", Arial, Helvetica, sans-serif;
   position: relative;
-  z-index: 2; /*Places the text above the overlay*/
-  color: white; /*Ensures the text is visible*/
-  text-align: center; /*ADJUST ACCORDINGLY DEPENDING ON WHERE YOU WANT TO PLACE YOUR TEXT*/
+  z-index: 2;
+  /*Places the text above the overlay*/
+  color: white;
+  /*Ensures the text is visible*/
+  text-align: center;
+  /*ADJUST ACCORDINGLY DEPENDING ON WHERE YOU WANT TO PLACE YOUR TEXT*/
   font-size: 50px;
   padding: 20px;
 }
@@ -89,34 +99,56 @@ body {
   0% {
     background-image: url("./images/Landscape\ pasta\ A.jpg");
   }
+
   24% {
     background-image: url("./images/Landscape\ pasta\ A.jpg");
-  } /* Hold image1 for 5s */
+  }
+
+  /* Hold image1 for 5s */
 
   25% {
     background-image: url("./images/Landscape\ Pasta\ B.jpg");
   }
+
   49% {
     background-image: url("./images/Landscape\ Pasta\ B.jpg");
-  } /* Hold image2 for 5s */
+  }
+
+  /* Hold image2 for 5s */
 
   50% {
     background-image: url("./images/landscape\ pasta\ C.jpg");
   }
+
   74% {
     background-image: url("./images/landscape\ pasta\ C.jpg");
-  } /* Hold image3 for 5s */
+  }
+
+  /* Hold image3 for 5s */
 
   75% {
     background-image: url("./images/landscape\ pasta\ D.jpg");
   }
+
   100% {
     background-image: url("./images/landscape\ pasta\ D.jpg");
-  } /* Hold image4 for 5s */
+  }
+
+  /* Hold image4 for 5s */
 }
 
-.right-container-img {
-  width: 400px;
+.dine-with-us-button {
+  width: 200px;
+  height: 50px;
+  background-color: rgb(202, 198, 198);
+  color: #1A1A1A;
+  font-size: 25px;
+  border:none;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.dine-with-us-button:hover {
+  background-color: #aaaaaa;
 }
 
 .policy-container {
