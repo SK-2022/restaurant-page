@@ -1,12 +1,4 @@
-/* <main class="main-container carousel">
-            <div class="carousel-content">
-                <div class="catch-phrase-main">The best homemade Italian dishes in Japan</div>
-                <div class="-order-button-container">
-                    <!-- Order button should direct you straight to the menu. -->
-                    <button class="dine-with-us-button">Dine with us</button>
-                </div>
-            </div>
-        </main> */
+
 
 export function createHomepageElements() {
   const contentContainer = document.getElementById("content");
