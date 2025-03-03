@@ -10,7 +10,7 @@ body {
   color: #FFFFFF;
 
 }
-
+/* HOME PAGE */
 .logo {
   display: flex;
   align-items: center;
@@ -161,4 +161,15 @@ body {
 .policy {
   display: flex;
   gap: 10px;
+}
+
+
+/* ABOUT PAGE STYLE */
+.chef-pic-container{
+display: flex;
+justify-content: center;
+}
+
+.chef-pic{
+  width: 1500px;
 }
