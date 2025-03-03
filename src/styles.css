@@ -18,6 +18,7 @@ body {
   font-size: 45px;
   flex-grow: 5;
   padding-left: 150px;
+  border-bottom: solid 1px rgb(61, 59, 59);
 }
 
 .nav-bar {
@@ -36,7 +37,7 @@ body {
   font-size: 20px;
   color: #FFFFFF;
   background-color: #1A1A1A;
-  border-bottom: none;
+  border-bottom: solid 1px rgb(61, 59, 59);
   border-top: none;
   border-right: none;
   border-left: solid 1px rgb(61, 59, 59);
@@ -166,10 +167,16 @@ body {
 
 /* ABOUT PAGE STYLE */
 .chef-pic-container{
+  margin-top: 20px;
 display: flex;
 justify-content: center;
 }
 
 .chef-pic{
-  width: 1500px;
+  width: 1000px;
+}
+
+.chef-description{
+  text-align: center;
+  font-size: 14px;
 }
