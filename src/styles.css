@@ -6,9 +6,8 @@
 }
 
 body {
-  background-color: #1A1A1A;
-  color: #FFFFFF;
-
+  background-color: #1a1a1a;
+  color: #ffffff;
 }
 /* HOME PAGE */
 .logo {
@@ -35,16 +34,16 @@ body {
   width: 100%;
   font-family: "Charm", Arial, Helvetica, sans-serif;
   font-size: 20px;
-  color: #FFFFFF;
-  background-color: #1A1A1A;
+  color: #ffffff;
+  background-color: #1a1a1a;
   border-bottom: solid 1px rgb(61, 59, 59);
   border-top: none;
   border-right: none;
   border-left: solid 1px rgb(61, 59, 59);
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out ;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-.nav-bar-buttons:hover{
+.nav-bar-buttons:hover {
   background-color: #383838;
 }
 
@@ -52,7 +51,6 @@ body {
   padding: 20px;
   display: flex;
   justify-content: center;
- 
 }
 
 .main-container.carousel {
@@ -65,7 +63,6 @@ body {
   /*Necessary to make the dark overlay*/
   animation: changeBackground 20s infinite linear;
   transition: background-image 2s ease-in-out;
-  
 }
 
 .carousel::before {
@@ -75,10 +72,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,
-      0,
-      0,
-      0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   /* Dark overlay (adjust opacity as needed) */
   z-index: 1;
   /*Ensures it appears ABOVE the background*/
@@ -143,9 +137,9 @@ body {
   width: 200px;
   height: 50px;
   background-color: rgb(202, 198, 198);
-  color: #1A1A1A;
+  color: #1a1a1a;
   font-size: 25px;
-  border:none;
+  border: none;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
@@ -164,19 +158,29 @@ body {
   gap: 10px;
 }
 
-
 /* ABOUT PAGE STYLE */
-.chef-pic-container{
+.chef-pic-container {
   margin-top: 20px;
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-.chef-pic{
+.chef-pic {
   width: 1000px;
 }
 
-.chef-description{
+.chef-description-headline{
+  font-size: 30px;
+  font-family: "Charm",Arial, Helvetica, sans-serif;
+}
+
+.chef-description {
   text-align: center;
+  margin-top: 30px;
   font-size: 14px;
+}
+
+.chef-description-text{
+  margin-top: 20px;
+  font-size: 20px;
 }
