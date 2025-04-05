@@ -1,8 +1,11 @@
 
 
 export function createHomepageElements() {
+ 
   const contentContainer = document.getElementById("content");
-
+   //First make the content div EMPTY.
+  contentContainer.innerHTML = ""
+  //Now fill the DIV with content.
   const mainContainer = document.createElement("main");
   mainContainer.classList.add("main-container", "carousel");
   contentContainer.appendChild(mainContainer);
