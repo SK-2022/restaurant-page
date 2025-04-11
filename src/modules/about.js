@@ -67,7 +67,6 @@ export function createAboutPageElements(imageSource) {
   const chefDescriptionText5 = document.createElement("p");
   chefDescriptionText5.classList.add("chef-description-text");
   chefDescriptionText5.innerHTML =
-    "chef-description-text" >
     "Welcome to his world—where pasta is poetry, and passion is served on every plate.";
   chefDescriptionContainer.appendChild(chefDescriptionText5);
 }

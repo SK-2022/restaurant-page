@@ -19,4 +19,5 @@ const reserveTableButton = document.querySelector(".nav-bar-buttons.reserve");
 //Adds the click function. Ensures the homepage is empty before appending anything.
   homeButton.addEventListener('click', () => createHomepageElements());
   aboutButton.addEventListener('click', () => createAboutPageElements(chefImage));
-
+//   menuButton.addEventListener('click', () => )
+//   menuButton.addEventListener('click', () => )
