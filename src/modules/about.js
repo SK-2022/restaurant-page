@@ -1,5 +1,6 @@
 {
-  /* <div id="content">
+  /* HTML CODE For the javascript below 
+  <div id="content">
        <main class="chef-pic-container">
         <img src="./images/AlessandroSerenzahorizontal.jpg" alt="Chef Alessandro Serenza focused on prepping the next meal" class="chef-pic">
        </main>
