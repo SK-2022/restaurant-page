@@ -188,10 +188,21 @@ body {
 /*MENU PAGE STYLE*/
 
 .menu-container{
-  display: flex;
+ display: flex;
+ flex-direction: column;
+ gap: 20px;
+ justify-content: center;
 }
 
 .menu-item-image{
-  width: 300px;
-  height: 300px;
+  width: 320px;
+  height: 350px;
 }
+
+.first-line-of-menu,.second-line-of-menu{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+
