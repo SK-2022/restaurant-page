@@ -3,6 +3,7 @@ import "./styles.css";
 import chefImage from "./images/AlessandroSerenzahorizontal.jpg"; //This was VERY challenging to figure out. The reason I couldn't get chef alessandro's picture to come on was because I didn't import it. When using modules you have to import the pictures.
 import { createHomepageElements } from "./modules/initial-page-load";
 import { createAboutPageElements } from "./modules/about";
+import { createMenu } from "./modules/menu";
 
 console.log("Server running....");
 
@@ -19,5 +20,5 @@ const reserveTableButton = document.querySelector(".nav-bar-buttons.reserve");
 //Adds the click function. Ensures the homepage is empty before appending anything.
   homeButton.addEventListener('click', () => createHomepageElements());
   aboutButton.addEventListener('click', () => createAboutPageElements(chefImage));
-//   menuButton.addEventListener('click', () => )
+  menuButton.addEventListener('click', () => createMenu())
 //   reserveTableButton.addEventListener('click', () => )
