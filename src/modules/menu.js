@@ -113,6 +113,9 @@ export function createMenu() {
     ];
   
     const contentDiv = document.getElementById("content");
+    //Empty the ContentDiv
+    contentDiv.innerHTML = ""
+    //Checks if there's anything in the content div
     if (!contentDiv) {
       console.error("No element with id 'content' found in the document.");
       return;
