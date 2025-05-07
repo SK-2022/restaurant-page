@@ -70,42 +70,48 @@
 //           </div>
 //         </div>
 //       <!-- </div> -->
+//Step 1 : Load all images in ./imagesfolder
+const images = require.context('../images', false, /\.(png|jpe?g)$/)
 
-//Its not working just yet. Work on this next time
+//Step 2 : Helper function to get actual image path from filename
+function getImagePath(filename){
+  return images(`./${filename}`)
+}
+
 export function createMenu() {
     const menuData = [
       {
-        src: "./images/Landscape pasta A.jpg",
+        src: "Landscape pasta A.jpg",
         alt: "image of spaghetti in delicious white sauce",
         description:
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil velit a amet et eius est omnis rerum sunt provident voluptatibus.",
       },
       {
-        src: "./images/Landscape Pasta B.jpg",
+        src: "Landscape Pasta B.jpg",
         alt: "pasta balls in meat sauce",
         description:
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil velit a amet et eius est omnis rerum sunt provident voluptatibus.",
       },
       {
-        src: "./images/landscape pasta C.jpg",
+        src: "landscape pasta C.jpg",
         alt: "pasta in spices and green leaves",
         description:
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil velit a amet et eius est omnis rerum sunt provident voluptatibus.",
       },
       {
-        src: "./images/landscape pasta D.jpg",
+        src: "landscape pasta D.jpg",
         alt: "macaroni pasta with some bread with butter",
         description:
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil velit a amet et eius est omnis rerum sunt provident voluptatibus.",
       },
       {
-        src: "./images/lansdscape italian meat.jpg",
+        src: "lansdscape italian meat.jpg",
         alt: "lamb chops",
         description:
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil velit a amet et eius est omnis rerum sunt provident voluptatibus.",
       },
       {
-        src: "./images/Pasta B .jpg",
+        src: "Pasta B .jpg",
         alt: "spaghetti with shrimp and tomato",
         description:
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil velit a amet et eius est omnis rerum sunt provident voluptatibus.",
@@ -136,7 +142,7 @@ export function createMenu() {
   
       const img = document.createElement("img");
       img.className = "menu-item-image";
-      img.src = item.src;
+      img.src = getImagePath(item.src); //Use the helper function to get the image filepath 
       img.alt = item.alt;
   
       const desc = document.createElement("div");

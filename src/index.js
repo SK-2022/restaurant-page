@@ -4,7 +4,7 @@ import chefImage from "./images/AlessandroSerenzahorizontal.jpg"; //This was VER
 import { createHomepageElements } from "./modules/initial-page-load";
 import { createAboutPageElements } from "./modules/about";
 import { createMenu } from "./modules/menu";
-
+ 
 console.log("Server running....");
 
 //Loads the homepage and creates all elements with their appropriate styles
