@@ -70,6 +70,7 @@
 //           </div>
 //         </div>
 //       <!-- </div> -->
+
 //Step 1 : Load all images in ./imagesfolder
 const images = require.context('../images', false, /\.(png|jpe?g)$/)
 

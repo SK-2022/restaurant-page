@@ -19,6 +19,7 @@ const reserveTableButton = document.querySelector(".nav-bar-buttons.reserve");
 
 //Adds the click function. Ensures the homepage is empty before appending anything.
   homeButton.addEventListener('click', () => createHomepageElements());
-  aboutButton.addEventListener('click', () => createAboutPageElements(chefImage));
-  menuButton.addEventListener('click', () => createMenu())
-//   reserveTableButton.addEventListener('click', () => )
+  aboutButton.addEventListener('click', () => createAboutPageElements(chefImage)); 
+  menuButton.addEventListener('click', () => createMenu()) //I used the require.context() function to import all the images dynamically onto my menu WITHIN the menu.js menu
+
+// reserveTableButton.addEventListener('click', () => )
