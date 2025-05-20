@@ -169,9 +169,9 @@ body {
   width: 1000px;
 }
 
-.chef-description-headline{
+.chef-description-headline {
   font-size: 30px;
-  font-family: "Charm",Arial, Helvetica, sans-serif;
+  font-family: "Charm", Arial, Helvetica, sans-serif;
 }
 
 .chef-description {
@@ -180,67 +180,78 @@ body {
   font-size: 14px;
 }
 
-.chef-description-text{
+.chef-description-text {
   margin-top: 20px;
   font-size: 20px;
 }
 
 /*MENU PAGE STYLE*/
 
-.menu-container{
- display: flex;
- flex-direction: column;
- gap: 20px;
- justify-content: center;
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
 }
 
-.menu-item-image{
+.menu-item-image {
   width: 320px;
   height: 350px;
 }
 
-.first-line-of-menu,.second-line-of-menu{
+.first-line-of-menu,
+.second-line-of-menu {
   display: flex;
   gap: 20px;
   justify-content: center;
 }
 
-
 /* RESERVATION PAGE STYLING */
 
-.form-parent-container{
+.form-parent-container {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #303030;
   padding: 50px;
   height: 100vh;
+  /*BACKGROUND IMAGE*/
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("./images/restaurant\ image\ background\ reserve\ table.jpg") no-repeat center center / cover;
 }
 
-.form-container{
+.form-container {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  font-weight: bold;
 }
 
-.form-input{
+.form-input {
   color: white;
+  font-weight: bold;
   width: 640px;
   height: 40px;
   background-color: #303030;
   border: 1px solid #484848;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8); /*Subtle bottom shadow*/
-  outline:none;
+  outline: none;
   transition: box-shadow 0.2s ease;
 }
 
-.form-submit-button{
+.form-submit-button {
   font-weight: bold;
   height: 40px;
   margin-left: 75px;
   width: 500px;
-  background-color: #CDC9C9;
+  background-color: #cdc9c9;
   border: none;
   border-radius: 6px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.form-submit-button:hover {
+  background-color: #aaaaaa;
 }
