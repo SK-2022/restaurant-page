@@ -9,7 +9,7 @@ import { createReservationForms } from "./modules/reserve-a-table";
 console.log("Server running....");
 
 //Loads the homepage and creates all elements with their appropriate styles
-createHomepageElements();
+// createHomepageElements();
 
 
 //Create the tab switching logic HERE. Wipe current conets of div#content and run the correct module for the corresponding tab.
@@ -20,9 +20,9 @@ const menuButton = document.querySelector(".nav-bar-buttons.menu");
 const reserveTableButton = document.querySelector(".nav-bar-buttons.reserve");
 
 //Adds the click function. Ensures the homepage is empty before appending anything.
-  homeButton.addEventListener('click', () => createHomepageElements());
-  aboutButton.addEventListener('click', () => createAboutPageElements(chefImage)); 
-  menuButton.addEventListener('click', () => createMenu()) //I used the require.context() function to import all the images dynamically onto my menu WITHIN the menu.js menu
+  // homeButton.addEventListener('click', () => createHomepageElements());
+  // aboutButton.addEventListener('click', () => createAboutPageElements(chefImage)); 
+  // menuButton.addEventListener('click', () => createMenu()) //I used the require.context() function to import all the images dynamically onto my menu WITHIN the menu.js menu
 
   // This adds the click function differently for the reserve page
-  createReservationForms()
+  // createReservationForms()

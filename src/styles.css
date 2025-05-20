@@ -206,3 +206,14 @@ body {
 }
 
 
+/* RESERVATION PAGE STYLING */
+
+.form-parent-container{
+  display: flex;
+  justify-content: center;
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+}
