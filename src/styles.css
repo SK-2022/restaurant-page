@@ -211,10 +211,10 @@ body {
 .form-parent-container{
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #303030;
   padding: 50px;
-  
-
+  height: 100vh;
 }
 
 .form-container{
@@ -228,13 +228,19 @@ body {
   width: 640px;
   height: 40px;
   background-color: #303030;
-  border: 1px solid white;
+  border: 1px solid #484848;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /*Subtle bottom shadow*/
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8); /*Subtle bottom shadow*/
   outline:none;
   transition: box-shadow 0.2s ease;
 }
 
 .form-submit-button{
+  font-weight: bold;
   height: 40px;
+  margin-left: 75px;
+  width: 500px;
+  background-color: #CDC9C9;
+  border: none;
+  border-radius: 6px;
 }
