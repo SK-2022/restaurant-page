@@ -211,9 +211,30 @@ body {
 .form-parent-container{
   display: flex;
   justify-content: center;
+  background-color: #303030;
+  padding: 50px;
+  
+
 }
 
 .form-container{
   display: flex;
   flex-direction: column;
+  gap: 10px;
+}
+
+.form-input{
+  color: white;
+  width: 640px;
+  height: 40px;
+  background-color: #303030;
+  border: 1px solid white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /*Subtle bottom shadow*/
+  outline:none;
+  transition: box-shadow 0.2s ease;
+}
+
+.form-submit-button{
+  height: 40px;
 }

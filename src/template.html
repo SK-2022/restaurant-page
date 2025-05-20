@@ -45,20 +45,25 @@
     </header>
     <div id="content">
       <div class="form-parent-container">
-
         <form class="form-container" action="/submit-reservation" method="POST">
           <label for="restaurant">Choose a restaurant:</label>
-          <select id="restaurant" name="restaurant" required>
-            <option value="">--Select--</option>
-            <option value="A">Restaurant A</option>
-            <option value="B">Restaurant B</option>
+          <select class="form-input" id="restaurant" name="restaurant" required>
+            <option value="">*Restaurant</option>
+            <option value="A">Serenza Osaka</option>
+            <option value="B">Serenza Roppongi</option>
           </select>
 
           <label for="date">Reservation Date:</label>
-          <input type="date" id="date" name="date" required />
+          <input
+            class="form-input"
+            type="date"
+            id="date"
+            name="date"
+            required
+          />
 
           <label for="time">Reservation Time:</label>
-          <select id="time" name="time" required>
+          <select class="form-input" id="time" name="time" required>
             <option value="12:00">12:00 PM</option>
             <option value="12:15">12:15 PM</option>
             <option value="12:30">12:30 PM</option>
@@ -96,6 +101,7 @@
 
           <label for="people">Number of People:</label>
           <input
+            class="form-input"
             type="number"
             id="people"
             name="people"
@@ -104,7 +110,7 @@
             required
           />
 
-          <button type="submit">Book Table</button>
+          <button class="form-submit-button" type="submit">Book Table</button>
         </form>
       </div>
     </div>
