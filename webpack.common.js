@@ -1,21 +1,24 @@
-const path = require('path');
- const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
- module.exports = {
-   entry: {
-     app: './src/index.js',
-   },
+module.exports = {
+  mode: "production", //THIS CAN BE CHANGED TO DEV MODE TOO. PRODUCTION MODE OFFERS MORE "OPTIMIZATIONS" FOR DEPLOYMENT
+  entry: "./src/index.js",
+  output: {
+    filename: "main.js",
+    path: path.resolve(__dirname, "dist"),
+    clean: true,
+  },
+  devtool: "eval-source-map",
+  devServer: {
+    watchFiles: ["./src/template.html"],
+  },
   plugins: [
-     new HtmlWebpackPlugin({
-       title: 'Production',
-     }),
-   ],
-   output: {
-     filename: '[name].bundle.js',
-     path: path.resolve(__dirname, 'dist'),
-     clean: true,
-   },
-   module: {
+    new HtmlWebpackPlugin({
+      template: "./src/template.html",
+    }),
+  ],
+  module: {
     rules: [
       {
         test: /\.css$/i,
@@ -31,4 +34,4 @@ const path = require('path');
       },
     ],
   },
- };
+};
