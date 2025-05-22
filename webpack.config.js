@@ -2,7 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: "development",
+  mode: "production", //THIS CAN BE CHANGED TO DEV MODE TOO. PRODUCTION MODE OFFERS MORE "OPTIMIZATIONS" FOR DEPLOYMENT
   entry: "./src/index.js",
   output: {
     filename: "main.js",
